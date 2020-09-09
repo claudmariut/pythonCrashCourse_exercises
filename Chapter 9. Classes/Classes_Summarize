@@ -1,0 +1,62 @@
+1. Making an object from a class is called instantiation. We work with
+instances.
+
+2. A function that is part of a class, is a method. The __init__() method is a
+special method that is called automatically when we create new instances
+based on the class.
+
+3. self parameter is required in the method definition. Every method call
+associated with an instance automatically passes self argument.
+
+4. Every variable prefixed with self is available to every method in the class.
+self.name = name takes the value associated with the parameter name and
+assigns it to the variable self.name. These variables are called attributes.
+
+5. We can create an attribute from the __intit__ method, without being passed
+as a parameter. This is defined inside the method. We assign a default value.
+
+6. We can modify the value of an attribute in three ways.
+
+6.1. Modifying an attribute's value directly.
+ex. instance.attribute = "new value" # Here we just modify the attribute value
+in the method function from assigning a new value from the outside.
+This works to modify attributes that we called when we created the instance.
+
+6.2. Modifying an attribute's value through a method.
+We create a method with a
+parameter. We call the method with the instance and give an argument. The
+value of that argument is then assign to the attribute/variable we create in
+the __init__ method.
+
+6.3. Incrementing an attribute's value through a method.
+Same as the second method. We create a method with a new parameter. But when we
+call the method with the instance. The argument value is added to the attribute.
+
+7. Inheritance. Ex. One class is a specialized version of the other class. When
+one class inherits from another, it takes the attributes and methods from the
+first class. The original class is called "parent class", and the new class is
+called "child class". The child can inherit all the attributes and methods from
+the parent class but also define its own.
+
+8. The "super()"" function is a special function that allow us to call a method
+from the parent class. So an instance of the child class has all the arguments
+defined in that method. Super comes form superclass and subclass. This is only
+to create an instance with the attributes. Once the instance is created, we can
+access all the methods inside the parent class with the instance.
+
+9. We include new attributes in the __init__() method of the child class so we
+use them in methods owned by the child class.
+
+10. Attributes are always created in the __init__() method. Either as a
+parameter or a variable directly.
+
+11. We can override methods from the parent class. Simply, we can define a
+method with the same name, and change the code, or pass it.
+
+12. Instances as attributes. When we are adding many attributes and methods
+specific to a part of the class, we can create a new class separated. And use
+an instance of that class as an attribute.
+ex. self.arguments = classname(). To call a funciton we use:
+self.argument = instance / instance.method()
+
+13.

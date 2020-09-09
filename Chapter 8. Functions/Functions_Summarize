@@ -1,0 +1,53 @@
+Functions are useful to realize different tasks in a program.
+
+1. To write a function:
+def function_name():
+    pass
+
+2. Inside the function name, we can store parameters.
+def function_name(parameter_0):
+
+3. We call the function writing the function name only and associating the para
+meter with arguments,
+function_name(argument_0)
+
+4. We can pass as many arguments as we want, and assign default values, or omit
+an argument. These go at the end.
+def function_name(parameter_0, parameter_1, parameter_2="default_2"):
+def function_name(parameter_0, parameter_1=None)
+
+5. We can create dictionaries and list, inside a function, by storing the
+arguments received in a list inside, or even create a loop outside the function
+that while the users wants, it stores information in a list or dictionary.
+
+6. We can pass an arbitrary number of arguments using *args
+All the arguments that are received are stored in a tuple called args.
+
+7. We can create an arbitrary number of arguments as key-values pairs. Stored
+in a dictionary called *kwargs in the function def. Each time we give an
+arguments we use key-value pairs. Unless, there are more positional arguments,
+at the beginning.
+
+8. Importing a function from a module (.py file). Same directory.
+# If we use import, it imports all the functions from the module.
+import pizza
+
+9. # We can import the function directly from the module.
+from pizza import make_pizza
+
+# Using as to give a function an alias.
+from pizza import make_pizza as mp
+
+"""Syntax is from module_name import function_name as fn"""
+
+# Using as to give a module an alias.
+import pizza as p
+
+# We use to call the module, and then the function we want. Similar to Numpy.
+# (import numpy as np. It imports the module numpy as np. then we choose the
+# function we want to use)
+
+# Import all functions in a module.
+
+from pizza import *
+
