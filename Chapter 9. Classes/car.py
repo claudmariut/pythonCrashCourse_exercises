@@ -76,7 +76,7 @@ class ElectricCar(Car):
         Then initialize attributes specific to an Electric car.
         """
         super().__init__(make, model, year)
-        self.battery = Battery(75)  # We pass an instance as an argument.
+        self.battery = Battery()  # We pass an instance as an argument.
 
     def gas_tank_size(self, tank_size=None):
         """Electrics cars don't have gas tanks."""

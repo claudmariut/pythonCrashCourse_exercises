@@ -63,3 +63,7 @@ self.argument = instance / instance.method()
 in separate files. We can import single or multiple classes from a module.
 The instances created as an attribute from another class are automatically
 included as well.
+
+14. We give aliases to the classes we import to make it more easy to type.
+It is a good practice to create modules when starting projects working with
+modules an file that imports that module.
