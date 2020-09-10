@@ -56,7 +56,10 @@ method with the same name, and change the code, or pass it.
 12. Instances as attributes. When we are adding many attributes and methods
 specific to a part of the class, we can create a new class separated. And use
 an instance of that class as an attribute.
-ex. self.arguments = classname(). To call a funciton we use:
+ex. self.arguments = classname(). To call a function we use:
 self.argument = instance / instance.method()
 
-13.
+13. We create modules by leaving the code an classes alone, and importing the
+in separate files. We can import single or multiple classes from a module.
+The instances created as an attribute from another class are automatically
+included as well.
