@@ -67,3 +67,10 @@ included as well.
 14. We give aliases to the classes we import to make it more easy to type.
 It is a good practice to create modules when starting projects working with
 modules an file that imports that module.
+
+15. Python standard library is a set of modules included with python.
+
+16. We can import this modules to our files. random module is one of them.
+The randint() function, given two arguments (integers), it returns a random
+number between these two arguments, included. chose() function takes a list
+or tuple and returns a randomly chosen element.
