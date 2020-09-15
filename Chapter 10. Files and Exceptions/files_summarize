@@ -1,0 +1,32 @@
+1. Reading form a file is useful to analyze data. We can work with information
+from a file or even work with one line at a time.
+
+2. open() function ask for an argument, a file to be open in this case. And
+returns its content as an object. We can use close() to close the file. But
+that can cause bugs. Or the file may be left open. Tha is why we use "with" at
+the beginning. Se once, python finishes executing what it ned from the file, it
+close it automatically.
+
+3. Read method, stores the content of the file in a long string.
+
+4. We can access file from other paths inside th open() function as an argument.
+For instance. If we have a directory called text_files inside the directory in
+which you are working. You can do: with open("text_files/filename.txt) as ..."
+
+5. We can access files from other directories using the complete format:
+ "/home/claumariut/.../filename.txt"
+
+6. We can read line by line, to find something in a document for example. Using
+loops inside. We do not use the .read() method in this case. Because, it would
+have converted the file to a big string, returning characters. The object still
+returns lines.
+
+7. We can make a list from a file, so once we leave the with block, we still
+have access to the content of the file. we use .readlines() method, which
+
+8. We can work with file contents. Transform for example, the big string
+formatted in to a single line string. Also, the readlines() method, transforms
+the content into a string always. So we have to transform to int() or float().
+
+9. We can user the .replace() method to replace any word in the text. But we
+have to store the value again.

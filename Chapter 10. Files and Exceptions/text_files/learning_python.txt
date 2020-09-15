@@ -1,0 +1,5 @@
+In Python you can create lists, tuples, arrays, sets and dictionaries.
+In Python you can create functions and classes.
+In Python you can resolve reald world problems.
+In Python you can open files, read the content and work with it later.
+In Python you can create algorithms that resolve mathematical problems.
