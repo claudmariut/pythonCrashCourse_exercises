@@ -1,0 +1,4 @@
+I love programming.
+Hello World!
+I am appending new values.
+I love finding meaning in large datasets.

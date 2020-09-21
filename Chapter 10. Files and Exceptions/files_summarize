@@ -30,3 +30,8 @@ the content into a string always. So we have to transform to int() or float().
 
 9. We can user the .replace() method to replace any word in the text. But we
 have to store the value again.
+
+10. We can add a second argument to the open() function. 'w' write mode, 'r'
+read mode, 'a' append mode. Or 'r+' write and read. By default it is open in
+read mode 'r'. The file can be created just from the call function.
+
