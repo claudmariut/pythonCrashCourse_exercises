@@ -1,0 +1,21 @@
+1. When an error happens, python creates an exception object.
+We can tell python what to do when different kind of exception objects happen.
+
+2. We create try-except blocks. And put the code inside the try block. If
+python encounters an error, it will run the code inside the except block that
+handles that kind of error. If the code works, it will skip the except bloks.
+
+3. We can use a try-except-else block. We place the operation that might causes
+error in the try block. Then if the program arises an error in that operation,
+it looks after the except block that handles that error and executes that code.
+If no error arises, it executes the else block.
+
+4. We can analyze text. The string method .split(), creates a list with each
+word separate by a comma or space.
+
+5. The try-except-else block allows the program to keep running after
+finding a problem.
+
+6. .count(value) method returns the numbers of appearances of the value in the
+list, string, integer, etc...
+
