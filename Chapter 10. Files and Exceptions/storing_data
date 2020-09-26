@@ -1,0 +1,14 @@
+1. The json module allow us to store the data that user enters when they use
+our programs. (JavaScript Object Notation). It stores data structures, then
+we can load this data structures next time the program runs.
+
+2. We have to import json module to our file. We use json.dump() and
+json.load() functions.
+
+3. json.dump() is used to store something into a file. It need two arguments.
+A data structure, and a file object where to store it.
+The file we use has the extension .json.
+
+4. json.load() is used to load the data from json file. We first declare a
+variable, and assign the value of the variable to json.read(f), being 'f' the
+file object we opened.
