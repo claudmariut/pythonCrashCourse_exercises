@@ -1,0 +1,60 @@
+1. unittest module from the Python std lib provides tools for testing our code.
+A unit test verifies that one aspect of the function works correctly.
+A case test is a collection of unit tests that together prove that a function
+behaves as it's supposed to.
+
+2. To write a test case for a function we import the unittest module to the
+function. And we import the function we want to test.
+Then we create a class that Inherits from unittest.TestCase, and
+write a series of methods to test different aspects of the function behavior.
+For ex. class TestCase(unittest.TestCase): And then, we write a series of
+methods to test different aspects of the function.
+
+3. We create a function inside the class that tests one aspect of the function.
+First, we execute the function, with experimental values, and save the return
+values of the function in a variable. Then, we use an "assert" method.
+
+4. The assertEqual() method needs two arguments and compare them. One argument
+is the value the function returned, and the other one, is what we expect the
+the value to be. If both arguments match, and they are Equal, it returns OK,
+otherwise it will pop up an ERROR. The test failed.
+
+5. if __name__ == '__main__':  This will execute the tests only if we are running
+    unittest.main()            from the file.
+
+Before executing code, Python interpreter reads source file and define few
+special variables/global variables. If the python interpreter is running that
+module (the source file) as the main program, it sets the special __name__
+variable to have a value “__main__”. If this file is being imported from
+another module, __name__ will be set to the module’s name. Module’s name is
+available as value to __name__ global variable. A module is a file containing
+Python definitions and statements. The file name is the module name with the
+suffix .py appended.
+
+6. unittest.main() is necessary to run the tests. Inside if statement. Now, if
+we import the file with the test to another module. The tests will not be
+executed because __name__ will be the original module name.
+
+7. We add new tests by adding new methods to the Class. The methods name must
+start with "test" in order to the test to Run automatically.
+
+8. self. :
+assertEqual(a, b) Verify that a==b
+assertNotEqual(a, b) Verify that a!=b
+assertTrue(x) Verify that x is True
+assertFalse(x) Verify that x is False
+assertIn(item, list) Verify that item is in list
+assertNotIn(item, list) Verify that item is not in list
+
+9. Testing a class is similar to test a function. Much of the work involves
+testing the methods of the class. But there are a few differences.
+
+10. The unittest.TestCase class has a setUp() method allow us to create objects
+for the class we are testing that we can use in each of our test methods.
+We running a TestCase class, python runs first the setUp() method before
+running each tet method. Any object created in the setUp() method is then
+available to us. We have to use self.attribute to access them.
+(Is very similar to create attributes in a class, that are available to the
+methods of that class) (setUp() is like __init__() method.)
+
+11.
